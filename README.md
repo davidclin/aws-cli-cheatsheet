@@ -13,3 +13,5 @@ aws --version
 # Setup Credentials
 aws configure
 ```
+# If you're still having issues checkout
+[( link )](https://stackoverflow.com/questions/36969391/how-to-upgrade-aws-cli-to-the-latest-version)
