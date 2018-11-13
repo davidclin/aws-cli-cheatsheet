@@ -1,6 +1,13 @@
 # How to quicly install AWS CLI on EC2 Ubuntu 18.04 Instance
 
 ```
+# Install pip
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+sudo apt-get install python-pip
+
+
 # Install
 sudo apt-get update
 sudo apt-get install python-pip
