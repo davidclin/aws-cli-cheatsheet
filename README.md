@@ -1,7 +1,13 @@
 # How to quicly install AWS CLI on EC2 Ubuntu 18.04 Instance
 
 ```
-# Install pip  
+# If using Ubuntu 10 or higher
+# install aws cli via apt-get
+sudo apt-get update
+sudo apt-get install awscli
+aws --version
+
+# Install pip (not recommended for Ubuntu 10 or higher)
 # https://askubuntu.com/questions/672808/sudo-apt-get-install-python-pip-is-failing
 sudo apt-get install software-properties-common
 sudo apt-add-repository universe
@@ -9,14 +15,7 @@ sudo apt-get update
 sudo apt-get install python-pip
 
 
-# Install
-sudo apt-get update
-sudo apt-get install python-pip
-pip install awscli --upgrade --user
-sudo apt-get update
-sudo apt-get install awscli
-pip install awscli --upgrade --user
-aws --version
+
 
 # Setup Credentials
 aws configure
