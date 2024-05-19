@@ -1,4 +1,15 @@
-# How to quicly install AWS CLI on EC2 Ubuntu 18.04 Instance
+# AWS CLI Cheatsheet
+
+## How to get list of supported Availability Zones based on Instance Type
+##### Change the instance type value so it matches yours. This example uses a g5.xlarge in us-east-1 region.
+```
+aws ec2 describe-instance-type-offerings --location-type availability-zone --filters Name=instance-type,Values=g5.xlarge --region us-east-1 --query 'InstanceTypeOfferings[].{InstanceType:InstanceType,
+AvailabilityZone:Location}' --output table
+```
+![image](https://github.com/davidclin/aws-cli-cheatsheet/assets/6853545/da73c772-818b-45b7-8d4c-796a43994b49)
+
+
+## How to quickly install AWS CLI on EC2 Ubuntu 18.04 Instance
 
 ```
 # If using Ubuntu 10 or higher
