@@ -8,6 +8,11 @@ AvailabilityZone:Location}' --output table
 ```
 ![image](https://github.com/davidclin/aws-cli-cheatsheet/assets/6853545/da73c772-818b-45b7-8d4c-796a43994b49)
 
+## How to quickly install AWS CLI on Windows
+To update your current installation of AWS CLI on Windows, download a new installer each time you update to overwrite previous versions. AWS CLI is updated regularly. 
+```
+https://awscli.amazonaws.com/AWSCLIV2.msi
+```
 
 ## How to quickly install AWS CLI on EC2 Ubuntu 18.04 Instance
 
